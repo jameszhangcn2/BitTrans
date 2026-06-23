@@ -1,0 +1,12 @@
+{
+    "struct_name": "McuDebugInfo",
+    "fields": [
+        {
+            "name": "dev_id",
+            "type": "u8",
+            "offset": 0,
+            "length": 2,
+            "endian": "big"
+        }
+    ]
+}
