@@ -9,4 +9,4 @@
 ## TO DO LIST
 ### 1 json struct
 ### 2 python app
-### 3 HMI, input and output
+### 3 HMI, input and output, use "tkinter"
