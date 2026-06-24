@@ -7,6 +7,6 @@
 [!image(https://www.plantuml.com/plantuml/png/LO_13OCm34Nldi8Bm00S47I6Bf0IXxXAdSXn9CPlYaIh7lt_yvEzL7DgxPKWalEaU6ExgvEAgswHZJPhIW29Wg5bLDwZeMVj1MS1aEm9rr8G870YF8xnMRDyXzoiD0Fu8ECuN_qKM3nQ9AIZ92VEM31aFQC7MpqNXc7-EIOioc8NWUvVm9QbNxXJpnGM4j-_UWC0)
 
 ## TO DO LIST
-### 1 json struct
-### 2 python app
-### 3 HMI, input and output, use "tkinter"
+### 1 json struct -- done
+### 2 python app  -- done
+### 3 HMI, input and output, use "tkinter" -- done
