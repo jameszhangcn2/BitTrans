@@ -51,43 +51,15 @@ def parse_bytes_by_json_struct(hex_data: str, struct_json_str: str):
 # ==================== 测试运行 ====================
 if __name__ == "__main__":
     # 1. 原始十六进制字节
-    raw_hex = "05 48 65 6C 6C 6F 31 0A 00 00 00 01 02"
+    raw_hex = "62 01 23 31 33 35 33 20 31 33 32 39 20 31 33 32 39 01 55 AA 00 04 08 11 06 1A 00 0C 05 00 00 00 00 00 00 00 00 05 00 00 00 00 00 00 E8 03 51 E8 03 00 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF 03 03 03 03 03 03 03 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 00 00 00 00 00 00 00 00 00 FF 0F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
  
     # 2. JSON结构体配置（复制上面的JSON）
-    struct_json = '''
-    {
-      "struct_name": "DeviceInfo",
-      "fields": [
-        {
-          "name": "dev_id",
-          "type": "u8",
-          "offset": 0,
-          "length": 1
-        },
-        {
-          "name": "dev_name",
-          "type": "ascii",
-          "offset": 1,
-          "length": 6
-        },
-        {
-          "name": "status_code",
-          "type": "u16",
-          "offset": 7,
-          "length": 2,
-          "endian": "little"
-        },
-        {
-          "name": "version",
-          "type": "u32",
-          "offset": 9,
-          "length": 4,
-          "endian": "big"
-        }
-      ]
-    }
-    '''
- 
+
+    jsonFile = './mcudebug.json'
+    with open(jsonFile, 'r') as f:
+      struct_json_dict = json.load(f)
+    print(struct_json_dict)
+    struct_json=json.dumps(struct_json_dict) #json.dumps take a dictionary as input and returns a string as output.
     # 3. 执行解析
     res_dict, res_text = parse_bytes_by_json_struct(raw_hex, struct_json)
  
