@@ -10,3 +10,9 @@
 ### 1 json struct -- done
 ### 2 python app  -- done
 ### 3 HMI, input and output, use "tkinter" -- done
+
+### convert the python script to exe
+```
+python -m PyInstaller -w -F -i icons8-tools-100.ico BitTrans.py
+
+```
