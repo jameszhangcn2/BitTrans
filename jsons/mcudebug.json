@@ -9,6 +9,37 @@
             "endian": "big"
         },
         {
+            "name": "mcu_build_0",
+            "type": "U8",
+            "bit_offset": 24,
+            "bit_length": 4,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "mcu_build_1",
+            "type": "U8",
+            "bit_offset": 32,
+            "bit_length": 4,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "mcu_build_2",
+            "type": "U8",
+            "bit_offset": 40,
+            "bit_length": 4,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "mcu_build_3",
+            "type": "U8",
+            "bit_offset": 48,
+            "bit_length": 4,
+            "bit_order": "msb_first"
+        },
+        {
             "name": "socR_build",
             "type": "hex",
             "offset": 8,
@@ -21,6 +52,38 @@
             "offset": 13,
             "length": 4,
             "endian": "big"
+        },
+        {
+            "name": "socA_build_0",
+            "type": "U8",
+            "bit_offset": 104,
+            "bit_length": 4,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "socA_build_1",
+            "type": "U8",
+            "bit_offset": 112,
+            "bit_length": 4,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "socA_build_2",
+            "type": "U8",
+            "bit_offset": 120,
+            "bit_length": 4,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "socA_build_3",
+            "type": "U8",
+            "bit_offset": 128,
+            "bit_length": 4,
+            "endian": "big",
+            "bit_order": "msb_first"
         },
         {
             "name": "SOC slot",
@@ -107,6 +170,14 @@
             "endian": "big"
         },
         {
+            "name": "restartTask_bit0",
+            "type": "U8",
+            "bit_offset": 256,
+            "bit_length": 4,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
             "name": "Odometer",
             "type": "u32",
             "offset": 33,
@@ -128,6 +199,78 @@
             "endian": "big"
         },
         {
+            "name": "backLightPWM_powerOffStatus",
+            "type": "U8",
+            "bit_offset": 304,
+            "bit_length": 8,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "backLightPWM_funcfaultStatus",
+            "type": "U8",
+            "bit_offset": 312,
+            "bit_length": 8,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "backLightPWM_diagMode",
+            "type": "U8",
+            "bit_offset": 320,
+            "bit_length": 8,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "backLightPWM_diagLevel",
+            "type": "U8",
+            "bit_offset": 328,
+            "bit_length": 8,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "backLightPWM_pwmApp",
+            "type": "U16",
+            "bit_offset": 336,
+            "bit_length": 16,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "backLightPWM_pwmDegradeFactor",
+            "type": "U16",
+            "bit_offset": 352,
+            "bit_length": 16,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "backLightPWM_pwmTempIdx",
+            "type": "U8",
+            "bit_offset": 368,
+            "bit_length": 8,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "backLightPWM_pwmValue",
+            "type": "U16",
+            "bit_offset": 376,
+            "bit_length": 16,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
+            "name": "backLightPWM_pwmStressTest",
+            "type": "U8",
+            "bit_offset": 392,
+            "bit_length": 8,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+        {
             "name": "resetDateFlag",
             "type": "hex",
             "offset": 50,
@@ -147,6 +290,38 @@
             "offset": 52,
             "length": 1,
             "endian": "big"
+        },
+        {
+            "name": "resetTypeHistoryPower_bit0",
+            "type": "U8",
+            "bit_offset": 416,
+            "bit_length": 1,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+                {
+            "name": "resetTypeHistoryPower_bit1",
+            "type": "U8",
+            "bit_offset": 417,
+            "bit_length": 1,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+                {
+            "name": "resetTypeHistoryPower_bit2",
+            "type": "U8",
+            "bit_offset": 418,
+            "bit_length": 1,
+            "endian": "big",
+            "bit_order": "msb_first"
+        },
+                {
+            "name": "resetTypeHistoryPower_bit3",
+            "type": "U8",
+            "bit_offset": 419,
+            "bit_length": 1,
+            "endian": "big",
+            "bit_order": "msb_first"
         },
         {
             "name": "resetTypeHistoryFuncSafe",
