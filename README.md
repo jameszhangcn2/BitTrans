@@ -10,6 +10,8 @@
 ### 1 json struct -- done
 ### 2 python app  -- done
 ### 3 HMI, input and output, use "tkinter" -- done
+### 4 add "enum" to convert the value to readable string
+
 
 ### convert the python script to exe
 ```
